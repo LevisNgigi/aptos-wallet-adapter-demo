@@ -38,13 +38,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Aptos Wallet Adapter Demo</h1>
+        <h1>Aptos Wallet Adapter Demonstration</h1>
         <WalletSelector />
         {connected && account ? (
           <div>
             <p>Account Address: {account.address}</p>
             <p>Network: {network ? network.name : 'Unknown'}</p>
-            <p>Testnet Balance: {balance !== null ? `${balance} APT` : 'Loading...'}</p>
+            <p> Balance: {balance !== null ? `${balance} APT` : 'Loading...'}</p>
           </div>
         ) : (
           <p>No wallet connected</p>
